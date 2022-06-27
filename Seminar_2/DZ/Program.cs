@@ -23,7 +23,7 @@ else
 */
 
 //3. Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
-Console.Write("Введите номер дня недели: ");
+/*Console.Write("Введите номер дня недели: ");
 int dayNumber = Convert.ToInt32(Console.ReadLine());
 if (dayNumber >= 1 && dayNumber <= 7)
 {
@@ -39,4 +39,15 @@ if (dayNumber >= 1 && dayNumber <= 7)
 else
     {
     Console.WriteLine("Ошибка! Такого дня не существует!");;
+    }
+*/
+Console.Write("Введите номер дня недели (от 1 до 7): ");
+int dayNumber = Convert.ToInt32(Console.ReadLine());    
+if (dayNumber >= 1 && dayNumber <=5)
+    {
+    Console.WriteLine("Будний день!");
+    }
+    else
+    {
+    Console.WriteLine("Выходной день!");;
     }
