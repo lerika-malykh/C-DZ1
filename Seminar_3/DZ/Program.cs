@@ -1,15 +1,24 @@
 ﻿/*19. Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
 14212 -> нет
 12821 -> да
-23432 -> да
+23432 -> да*/
 
-Console.WriteLine("Введите 5ти-значное число: ");
+/*Console.WriteLine("Введите 5ти-значное число: ");
 string number = Console.ReadLine();
 bool palindrom(string number)
 {
     return number[0]==number[4] && number[1]==number[3];
 }
 Console.WriteLine(palindrom(number));*/
+//Вариант решения 2
+Console.WriteLine("Введите 5ти-значное число: ");
+int number = Math.Abs(Convert.ToInt32(Console.ReadLine()));
+bool palindrom(int num)
+{
+    return ((num%10 == num%10000) && ((num/1000)%10 == (num/100)%10));
+}
+Console.WriteLine(palindrom(number));
+
 
 /* 21.Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.
 A (3,6,8); B (2,1,-7), -> 15.84
@@ -31,8 +40,8 @@ Console.Write("Расстояние между точками = " + distance);*/
 3 -> 1, 8, 27
 5 -> 1, 8, 27, 64, 125*/
 
-int N = Convert.ToInt32(Console.ReadLine());
+/*int N = Convert.ToInt32(Console.ReadLine());
 for (int i = 1; i <= N; i ++)
 {
     Console.WriteLine("Куб числа " + i + " = " + Math.Pow(i, 3));
-}
+}*/
