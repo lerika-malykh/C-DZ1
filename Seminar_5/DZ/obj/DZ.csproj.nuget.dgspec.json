@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "G:\\GeekBrains\\C#\\seminar_5\\DZ\\DZ.csproj": {}
+    "G:\\GeekBrains\\C#\\Seminar_5\\DZ\\DZ.csproj": {}
   },
   "projects": {
-    "G:\\GeekBrains\\C#\\seminar_5\\DZ\\DZ.csproj": {
+    "G:\\GeekBrains\\C#\\Seminar_5\\DZ\\DZ.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\GeekBrains\\C#\\seminar_5\\DZ\\DZ.csproj",
+        "projectUniqueName": "G:\\GeekBrains\\C#\\Seminar_5\\DZ\\DZ.csproj",
         "projectName": "DZ",
-        "projectPath": "G:\\GeekBrains\\C#\\seminar_5\\DZ\\DZ.csproj",
+        "projectPath": "G:\\GeekBrains\\C#\\Seminar_5\\DZ\\DZ.csproj",
         "packagesPath": "C:\\Users\\Lerik\\.nuget\\packages\\",
-        "outputPath": "G:\\GeekBrains\\C#\\seminar_5\\DZ\\obj\\",
+        "outputPath": "G:\\GeekBrains\\C#\\Seminar_5\\DZ\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Lerik\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -44,16 +44,16 @@ Console.WriteLine($"Сумма элементов на нечетных мест
 double[] array = new double[10];
 int size = array.Length;
 double result = 0;
-double max = array[0];
-double min = array[0];
+double max = double.MinValue;
+double min = double.MaxValue;
 for (int i = 0; i < size; i++)
 {
-    array[i] = Math.Round((new Random().Next(-100, 100) * 0.01), 3);
+    array[i] = Math.Round((new Random().Next(1, 100) * 0.01), 3); //array[i] = new Random().NextDouble() * 100;
     if (array[i] > max) max = array[i];
     if (array[i] < min) min = array[i];
 }
 Console.WriteLine($"Исходный массив: [{String.Join("; ", array)}]");
 Console.WriteLine($"max = {max}");
-Console.WriteLine($"min = {min}");
+Console.WriteLine($"min = {Math.Round(min,3)}");
 result = Math.Round(Math.Abs(max - min), 3);
 Console.WriteLine($"Разница между максимальным и минимальным элементов массива: {result}");
