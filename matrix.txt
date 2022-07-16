@@ -1,0 +1,52 @@
+// Задача 51: Найти сумму элементов главной диагонали.
+// Например, задан массив:
+// 1 4 7 2
+// 5 9 2 3
+// 8 4 2 4
+// Сумма элементов главной диагонали: 1+9+2 = 12
+
+int rows = 4;
+int columns = 4;
+int[,] matrix = new int[rows, columns];
+
+FillArray(matrix);
+ShowArray(matrix);
+Console.WriteLine();
+CalculateArray(matrix);
+ShowArray(matrix);
+
+void FillArray(int[,] arrayInFunc)
+{
+    for (int i = 0; i < arrayInFunc.GetLength(0); i++)
+    {
+        for (int j = 0; j < arrayInFunc.GetLength(1); j++)
+        {
+            arrayInFunc[i, j] = new Random().Next(10);
+        }
+    }
+}
+
+
+void CalculateArray(int[,] arrayInFunc)
+{
+    for (int i = 0; i < arrayInFunc.GetLength(0); i++)
+    {
+        for (int j = 0; j < arrayInFunc.GetLength(1); j++)
+        {
+            if (i == j)
+                arrayInFunc[i, j] = (arrayInFunc[i, j]) + (arrayInFunc[i, j]);
+        }
+    }
+}
+
+void ShowArray(int[,] arrayInFunc)
+{
+    for (int i = 0; i < arrayInFunc.GetLength(0); i++)
+    {
+        for (int j = 0; j < arrayInFunc.GetLength(1); j++)
+        {
+            Console.Write(arrayInFunc[i, j] + "\t");
+        }
+        Console.WriteLine();
+    }
+}
