@@ -94,7 +94,7 @@ Console.WriteLine($"Искомый элемент {matrix[indexRows, indexColumn
 Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3.*/
 
 Console.WriteLine("Введите количество строк массива:");
-int rows = int.Parse(Console.ReadLine());
+int rows = int.Parse(Console.ReadLine()!);
 Console.WriteLine("Введите количество столбцов массива:");
 int columns = Convert.ToInt32(Console.ReadLine());
 int [,] matrix = new int [rows,columns];

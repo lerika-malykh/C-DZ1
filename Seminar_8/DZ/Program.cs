@@ -111,7 +111,7 @@ Console.Write($"Строка c индексом {row} имеет минимал�
 */
 
 // Задача 58: Задайте две матрицы. Напишите программу, которая будет находить произведение двух матриц.
-
+/*
 int[,] GetArray(int m, int n)
 {
     int[,] resultArray = new int[m, n];
@@ -168,3 +168,32 @@ for (int i = 0; i < m; i++)
 Console.WriteLine();
 Console.WriteLine("Произведение матриц:");
 PrintArray(resultMatrix);
+*/
+
+// Задача 60. Сформируйте трёхмерный массив из неповторяющихся двузначных чисел. 
+// Напишите программу, которая будет построчно выводить массив, добавляя индексы каждого элемента.
+
+using System.Collections.Generic;
+Console.Write("Введите размерность массива: ");
+int r = Convert.ToInt32(Console.ReadLine());
+int[,,] matrix = new int[r, r, r];
+HashSet<int> set1 = new HashSet<int>();
+for (int i = 0; i < matrix.GetLength(0); i++)
+{
+    for (int j = 0; j < matrix.GetLength(1); j++)
+    {
+        for (int k = 0; k < matrix.GetLength(2); k++)
+        {
+            int temp = new Random().Next(10, 100);
+            while (set1.Contains(temp))
+                {
+                    temp = new Random().Next(10, 100);
+                }
+                matrix[i,j,k] = temp;
+                set1.Add(temp);
+            Console.Write($"{matrix[i, j, k]} ({i}, {j}, {k})" + "\t");
+        }
+        Console.WriteLine();
+    }
+    Console.WriteLine();
+}
