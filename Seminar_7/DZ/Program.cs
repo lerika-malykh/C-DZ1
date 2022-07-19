@@ -108,12 +108,13 @@ for (int i = 0; i < matrix.GetLength(0); i++)
     }
     Console.WriteLine();
 }
-double sum = 0; //сумм элементов
 for (int j = 0; j < matrix.GetLength(1); j++)
 {
+    double sum = 0; //сумм элементов
     for (int i = 0; i < matrix.GetLength(0); i++)
     {
         sum += matrix[i,j];
     }
-    Console.WriteLine($"Среднее арифметическое элементов {j}-го столбца =  {sum/columns}"); 
+    Console.WriteLine($"Среднее арифметическое элементов {j}-го столбца =  {Math.Round(sum/rows,2)}");   
 }
+
