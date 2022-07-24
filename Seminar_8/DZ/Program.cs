@@ -1,6 +1,6 @@
 ﻿// Задача 54: Задайте двумерный массив. Напишите программу, которая упорядочит по убыванию элементы каждой строки двумерного массива.
 
-/*Console.Write("Введите количество строк массива: ");
+Console.Write("Введите количество строк массива: ");
 int rows = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите количество столбцов массива: ");
 int columns = Convert.ToInt32(Console.ReadLine());
@@ -54,7 +54,7 @@ Console.WriteLine();
 SortArray(array);
 Console.WriteLine("Сортировка по убыванию:");
 PrintArray(array);
-*/
+
 
 // Задача 56: Задайте прямоугольный двумерный массив. Напишите программу, которая будет находить строку с наименьшей суммой элементов.
 /*Console.Write("Введите количество строк массива: ");
@@ -173,7 +173,7 @@ PrintArray(resultMatrix);
 // Задача 60. Сформируйте трёхмерный массив из неповторяющихся двузначных чисел. 
 // Напишите программу, которая будет построчно выводить массив, добавляя индексы каждого элемента.
 
-using System.Collections.Generic;
+/*using System.Collections.Generic;
 Console.Write("Введите размерность массива: ");
 int r = Convert.ToInt32(Console.ReadLine());
 int[,,] matrix = new int[r, r, r];
@@ -196,4 +196,4 @@ for (int i = 0; i < matrix.GetLength(0); i++)
         Console.WriteLine();
     }
     Console.WriteLine();
-}
+}*/
